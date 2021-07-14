@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport" content="width=device-width, initial-scale=1.0")
+            //- <link rel="stylesheet", href="css/style.css"/>
+            link(rel="stylesheet", href="/CSS/style.css")
+            link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300,300i,700")
+            title Natours | #{title}
+
+    body
+        //- Header
+        include _header
+
+        //- Content
+        //- main.main
+        //-     h1= tour
+        block content   
+            h1 This is a placeholder heading
+
+        //- Footer
+        include _footer
+
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js")
+        //- script(src='/js/mapbox.js')
+        //- script(src='/js/login.js')
+        script(src="https://js.stripe.com/v3/")
+        script(src='/js/bundle.js')
+
