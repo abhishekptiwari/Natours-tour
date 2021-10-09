@@ -10,10 +10,12 @@ router.get('/checkout-session/:tourId', bookingController.getCheckoutSession);
 
 // Only for admin and lead-guides
 router.use(authController.restrictTo('admin', 'lead-guide'));
+
 router
   .route('/')
   .get(bookingController.getAllBooking)
   .post(bookingController.createBooking);
+
 
 router
   .route('/:id')
