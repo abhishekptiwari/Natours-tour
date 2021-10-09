@@ -9,6 +9,7 @@ const router = express.Router({ mergeParams: true });
 // GET /tour/245684/reviews
 // Post /reviews
 
+
 router
   .route('/')
   .get(reviewController.getAllReviews)
@@ -18,6 +19,7 @@ router
     reviewController.setTourUserIds,
     reviewController.createReview,
   );
+
 
 router
   .route('/:id')
