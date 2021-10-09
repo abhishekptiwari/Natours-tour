@@ -34,7 +34,6 @@ app.use(function (req, res, next) {
   }
   next();
 });
-
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 //1.Globsl MIDDLEWARE
