@@ -14,6 +14,8 @@ exports.setTourUserIds = (req, res, next) => {
   if (!req.body.user) req.body.user = req.user.id;
   next();
 };
+
+
 // Creating new review using handler function.
 exports.createReview = factory.createOne(Review);
 
