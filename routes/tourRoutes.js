@@ -11,6 +11,8 @@ const router = express.Router();
 // GET /tour/245684/reviews
 // Mounting Router
 // Whenever you find url like this then use reviewRouter.
+
+
 router.use('/:tourId/reviews', reviewRouter);
 
 router
